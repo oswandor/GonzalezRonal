@@ -8,4 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Articulo extends Model
 {
     use HasFactory;
+    protected $table = 'tb_articulos';
+
+    protected $primaryKey = 'id_articulo';
+
+    protected $fillable = [
+        'nombre_articulo',
+        'descripcion_articulo',
+        'cantidad_inventario_articulo',
+        'precio_articulo'
+    ];
+
+
 }
+
+
+
