@@ -25,3 +25,10 @@ class ArticulosTableSeeder extends Seeder
         ]);
     }
 }
+
+
+
+
+
+
+

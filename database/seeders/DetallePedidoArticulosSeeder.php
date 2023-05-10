@@ -50,3 +50,6 @@ class DetallePedidoArticulosSeeder extends Seeder
         ]);
     }
 }
+
+
+
