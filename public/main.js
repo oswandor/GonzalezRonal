@@ -1,5 +1,3 @@
-import './bootstrap';
-
 $('#parallax').parallax({
 	invertX: true,
 	invertY: true,
