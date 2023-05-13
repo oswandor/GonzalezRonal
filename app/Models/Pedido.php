@@ -11,6 +11,7 @@ class Pedido extends Model
     protected $table = 'tb_pedidos';  
     protected $primaryKey = 'id_pedido';
 
+    public $timestamps = false;
 
     protected $fillable = [
         'fecha_pedido',

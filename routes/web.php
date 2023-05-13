@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\PedidoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,10 @@ Route::get('/', function () {
 
 
 Route::resource('clientes', ClienteController::class);
+
+//Verb	URI	                Action	    Route Name
+
+//GET	/pedidos	        index	    pedidos.index 
+//GET	/pedidos/create	    create	    pedidos.create 
+
+Route::resource('pedidos' , PedidoController::class); 
