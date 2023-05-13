@@ -19,4 +19,15 @@ class Cliente extends Model
         'fecha_nacimiento_cliente'
     ];
 
+    public function pedidos()
+    {
+        return $this->hasMany(Pedido::class, 'fk_id_cliente');
+    }
+
+
+    public function detallesPedidos()
+    {
+        return $this->hasMany(DetallePedidoArticulo::class , 'fk_id_pedido' ) ; 
+    }
+
 }

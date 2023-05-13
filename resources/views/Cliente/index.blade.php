@@ -39,8 +39,13 @@
         <td>{{ $cliente->apellido_cliente }}</td>
         <td>{{ $cliente->fecha_nacimiento_cliente }}</td>
         <td>
-        
-        </td>
+                            <form action="{{ route('clientes.destroy',$cliente->id_cliente) }}" method="Post">
+                                <a class="btn btn-primary" href="{{ route('clientes.edit',$cliente->id_cliente) }}">Edit</a>
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+ </td>
     </tr>
     @endforeach
 </tbody>
