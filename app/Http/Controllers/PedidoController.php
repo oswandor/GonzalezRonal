@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Cliente;
 use App\Models\Pedido;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Symfony\Component\HttpFoundation\Response;
 
 class PedidoController extends Controller
@@ -104,8 +105,16 @@ class PedidoController extends Controller
      * @param  \App\Models\Pedido  $pedido
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pedido $pedido)
+    public function destroy(Pedido $pedido) :Response 
     {
-        //
+        // Eliminar los registros relacionados de tb_detalle_pedido_articulos
+         DB::table('tb_detalle_pedido_articulos')->where('fk_id_pedido', $pedido->id_pedido)->delete();
+
+        // Eliminar el pedido de tb_pedidos
+        $pedido->delete();
+
+
+        return redirect()->route('pedidos.index')->with('success', 'El cliente ha sido eliminado exitosamente.');
+
     }
 }
