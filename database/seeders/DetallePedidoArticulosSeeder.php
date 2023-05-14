@@ -47,6 +47,49 @@ class DetallePedidoArticulosSeeder extends Seeder
                 'cantidad_detalle' => 1,
                 'descuento_detalle' => 0.05,
             ],
+            // Agregue aquí los 12 registros restantes
+            [
+                'fk_id_articulo' => 6,
+                'fk_id_pedido' => 6,
+                'cantidad_detalle' => 1,
+                'descuento_detalle' => 0.05,
+            ],
+            [
+                'fk_id_articulo' => 7,
+                'fk_id_pedido' => 7,
+                'cantidad_detalle' => 4,
+                'descuento_detalle' => 0.25,
+            ],
+            [
+                'fk_id_articulo' => 8,
+                'fk_id_pedido' => 8,
+                'cantidad_detalle' => 2,
+                'descuento_detalle' => 0.10,
+            ],
+            [
+                'fk_id_articulo' => 9,
+                'fk_id_pedido' => 9,
+                'cantidad_detalle' => 1,
+                'descuento_detalle' => 0.05,
+            ],
+            [
+                'fk_id_articulo' => 10,
+                'fk_id_pedido' => 10,
+                'cantidad_detalle' => 3,
+                'descuento_detalle' => 0.20,
+            ],
+            [
+                'fk_id_articulo' => 11,
+                'fk_id_pedido' => 11,
+                'cantidad_detalle' => 2,
+                'descuento_detalle' => 0.15,
+            ],
+            [
+                'fk_id_articulo' => 12,
+                'fk_id_pedido' => 12,
+                'cantidad_detalle' => 1,
+                'descuento_detalle' => 0.10,
+            ]
         ]);
     }
 }

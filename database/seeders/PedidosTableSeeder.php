@@ -47,6 +47,48 @@ class PedidosTableSeeder extends Seeder
                 'fecha_entrega_pedido' => '2023-06-01',
                 'observaciones_pedido' => 'Pedido de bolsos',
                 'fk_id_cliente' => 5
+            ],
+            [
+                'fecha_pedido' => '2023-05-23',
+                'fecha_entrega_pedido' => '2023-06-03',
+                'observaciones_pedido' => 'Pedido de ropa formal',
+                'fk_id_cliente' => 6
+            ],
+            [
+                'fecha_pedido' => '2023-05-25',
+                'fecha_entrega_pedido' => '2023-06-05',
+                'observaciones_pedido' => 'Pedido de artículos para el hogar',
+                'fk_id_cliente' => 7
+            ],
+            [
+                'fecha_pedido' => '2023-05-28',
+                'fecha_entrega_pedido' => '2023-06-07',
+                'observaciones_pedido' => 'Pedido de productos electrónicos',
+                'fk_id_cliente' => 8
+            ],
+            [
+                'fecha_pedido' => '2023-06-01',
+                'fecha_entrega_pedido' => '2023-06-11',
+                'observaciones_pedido' => 'Pedido de juguetes para niños',
+                'fk_id_cliente' => 9
+            ],
+            [
+                'fecha_pedido' => '2023-06-05',
+                'fecha_entrega_pedido' => '2023-06-15',
+                'observaciones_pedido' => 'Pedido de alimentos y bebidas',
+                'fk_id_cliente' => 10
+            ],
+            [
+                'fecha_pedido' => '2023-06-08',
+                'fecha_entrega_pedido' => '2023-06-18',
+                'observaciones_pedido' => 'Pedido de libros',
+                'fk_id_cliente' => 11
+            ],
+            [
+                'fecha_pedido' => '2023-06-12',
+                'fecha_entrega_pedido' => '2023-06-22',
+                'observaciones_pedido' => 'Pedido de artículos para mascotas',
+                'fk_id_cliente' => 12
             ]
         ]);
 

@@ -40,6 +40,41 @@ class ClientesTableSeeder extends Seeder
                 'nombre_cliente' => 'Pedro',
                 'apellido_cliente' => 'Fernández',
                 'fecha_nacimiento_cliente' => '1990-12-22'
+            ],
+            [
+                'nombre_cliente' => 'Ana',
+                'apellido_cliente' => 'Martínez',
+                'fecha_nacimiento_cliente' => '1985-06-18'
+            ],
+            [
+                'nombre_cliente' => 'Diego',
+                'apellido_cliente' => 'López',
+                'fecha_nacimiento_cliente' => '1999-11-05'
+            ],
+            [
+                'nombre_cliente' => 'Sofía',
+                'apellido_cliente' => 'Torres',
+                'fecha_nacimiento_cliente' => '1987-07-20'
+            ],
+            [
+                'nombre_cliente' => 'Raúl',
+                'apellido_cliente' => 'Ramírez',
+                'fecha_nacimiento_cliente' => '1975-09-09'
+            ],
+            [
+                'nombre_cliente' => 'Julia',
+                'apellido_cliente' => 'Sánchez',
+                'fecha_nacimiento_cliente' => '1992-04-12'
+            ],
+            [
+                'nombre_cliente' => 'Jorge',
+                'apellido_cliente' => 'Castro',
+                'fecha_nacimiento_cliente' => '1983-02-01'
+            ],
+            [
+                'nombre_cliente' => 'Lucía',
+                'apellido_cliente' => 'Gutiérrez',
+                'fecha_nacimiento_cliente' => '1996-12-29'
             ]
         ]);
     }
