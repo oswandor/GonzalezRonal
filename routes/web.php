@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticuloController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\PedidoController;
 use Illuminate\Support\Facades\Route;
@@ -29,3 +30,8 @@ Route::resource('clientes', ClienteController::class);
 //GET	/pedidos/create	    create	    pedidos.create 
 
 Route::resource('pedidos' , PedidoController::class); 
+
+
+
+
+Route::resource('articulos' , ArticuloController::class); 

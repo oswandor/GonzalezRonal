@@ -10,6 +10,7 @@ class Articulo extends Model
     use HasFactory;
     protected $table = 'tb_articulos';
 
+    public $timestamps = false;
     protected $primaryKey = 'id_articulo';
 
     protected $fillable = [

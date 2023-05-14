@@ -7,6 +7,7 @@ use App\Models\Pedido;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\DependencyInjection\RemoveEmptyControllerArgumentLocatorsPass;
 
 class PedidoController extends Controller
 {
@@ -83,8 +84,14 @@ class PedidoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(Pedido $pedido)
-    {
-        //
+    {   
+          // pasar todos los clientes  
+          $listOfClientes = Cliente::all(); 
+        
+          return response()->view('Pedido.edit', [
+            'pedido' => $pedido,
+            'listOfClientes' => $listOfClientes
+        ]);
     }
 
     /**
@@ -94,9 +101,20 @@ class PedidoController extends Controller
      * @param  \App\Models\Pedido  $pedido
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pedido $pedido)
-    {
-        //
+    public function update(Request $request, Pedido $pedido)  :Response
+     {
+        $pedido = Pedido::find($pedido->id_pedido);
+         
+        $pedido->update([
+            
+            'fecha_pedido' => $request->input('FechaEnlaQueseRealiza'),
+            'fecha_entrega_pedido' => $request->input('FechaDeEntrega'),
+            'observaciones_pedido' => $request->input('observacionDelpedido'),
+            'fk_id_cliente' => $request->input('ClienteQuehacePedido')
+        ]);
+
+
+        return redirect()->route('pedidos.index')->with('success','Company Has Been updated successfully');
     }
 
     /**

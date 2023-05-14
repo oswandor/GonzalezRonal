@@ -26,21 +26,18 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pedido</a>
+          <a class="nav-link" href="/pedidos">Pedido</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Cliente</a>
+          <a class="nav-link" href="/clientes">Cliente</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Articulo</a>
+          <a class="nav-link" href="/articulos">Articulo</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
-
-
 
 
 
