@@ -41,6 +41,10 @@
 
 
 
+<h1 style="color: white;" class="text-center">Ronal Oswaldo Gonzalez Guardado # 031622</h1>
+<h1 style="color: white; " class="text-center">SOBEYDA XIOMARA MARTINEZ AVALOS #</h1>
+
+<h2 style="color:white;" class="text-center">GRUPO 1 TDSV11A</h2>
 
 </body>
 </html>
